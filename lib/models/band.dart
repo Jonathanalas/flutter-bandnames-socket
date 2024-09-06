@@ -11,7 +11,7 @@ class Band{
 });
 
   factory Band.formMap(Map<String,dynamic> obj)=> 
-  Band(id:obj['id'], 
-        name:obj['name'],
-        votes:obj['votes']);
+  Band(id:obj['id']??'no-id', 
+        name:obj['name']??'no-name',
+        votes:obj['votes']??'no-votes');
 }
